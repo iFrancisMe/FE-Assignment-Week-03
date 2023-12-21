@@ -52,119 +52,113 @@
                 <!--Main Content-->
                 <div class="bg-white p-3 text-dark">
 
-                    <!--Table of 1 column with embedded grid in table body data cell-->
+                    <!--Table of 1 column with embedded grid in table data cell within each row.-->
                     <table class="table table-hover">
                         <thead class="thead-dark">
-                            <tr scope="col">
-                                <th class="mr-auto">
-                                    Shared Folders
-                                </th>
+                            <tr>
+                                <!--Table heading-->
+                                <th>Shared Folders</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <!--
+                                Each row is populated by an anchor with the name of the folder. Clicking on the folder
+                                will toggle the expand control on the div within the cell showing the related information
+                            -->
                             <tr>
-                                <td>
-                                    <!--Start of embedded grid-->
-                                    <div class="container">
-                                        <div class="row">
-                                            <!--Shared folder name in fixed column on left-->
-                                            <div class="col-3 text-primary font-weight-bold mb-2">
-                                                Documents
+                                <td class="text-primary">
+                                    <a class="btn-block bg-transparent text-left text-primary font-weight-bold pt-2" data-toggle="collapse"
+                                    data-target="#tableRowDropdown1" aria-controls="tableRowDropdown1" aria-expanded="false">
+                                        Documents
+                                    </a>
+                                    <!--
+                                        Using a bootstrap grid to contain the relevent attributes and divide each
+                                        into its own column. On small, med, and large screens, each column is
+                                        allocated 25% of the viewport. On smaller screens, each column takes up
+                                        100%, causing them to stack vertically.
+                                    -->
+                                    <div id="tableRowDropdown1" class="container-fluid collapse pt-3">
+                                        <div class="row m-auto">
+
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Status <span class="text-success">Online</span></button>
                                             </div>
-                                            <!--Middle column takes up to 50% of screen space-->
-                                            <div class="col-md-6">
-                                                <!--Shared folder attributes in button stack-->
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Status</span>
-                                                    <span class="text-success">Online</span>
-                                                </button>
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Protocol</span>
-                                                    <span class="text-success">SMB</span>
-                                                </button>
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Encrypted</span>
-                                                    <span class="text-success">True</span>
-                                                </button>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Protocol <span class="text-success">SMB</span></button>
                                             </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Encryption <span class="text-success">On</span></button>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <!--Shared folder 2-->
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-3 text-primary font-weight-bold mb-2">
-                                                Movies
+                                <td class="text-primary">
+                                    <a class="btn-block bg-transparent text-left text-primary font-weight-bold pt-2" data-toggle="collapse"
+                                    data-target="#tableRowDropdown2" aria-controls="tableRowDropdown2" aria-expanded="false">
+                                        Movies
+                                    </a>
+                                    <div id="tableRowDropdown2" class="container-fluid collapse pt-3">
+                                        <div class="row m-auto">
+                                            
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Status <span class="text-success">Online</span></button>
                                             </div>
-                                            <div class="col-md-6">
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Status</span>
-                                                    <span class="text-success">Online</span>
-                                                </button>
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Protocol</span>
-                                                    <span class="text-success">NFS</span>
-                                                </button>
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Encrypted</span>
-                                                    <span class="text-warning">False</span>
-                                                </button>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Protocol <span class="text-success">NFS</span></button>
                                             </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Encryption <span class="text-warning">Off</span></button>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <!--Shared folder 3-->
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-3 text-primary font-weight-bold mb-2">
-                                                Music
+                                <td class="text-primary">
+                                    <a class="btn-block bg-transparent text-left text-primary font-weight-bold pt-2" data-toggle="collapse"
+                                    data-target="#tableRowDropdown3" aria-controls="tableRowDropdown3" aria-expanded="false">
+                                        Photos
+                                    </a>
+                                    <div id="tableRowDropdown3" class="container-fluid collapse pt-3">
+                                        <div class="row m-auto">
+                                            
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Status <span class="text-success">Online</span></button>
                                             </div>
-                                            <div class="col-md-6">
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Status</span>
-                                                    <span class="text-danger">Offline</span>
-                                                </button>
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Protocol</span>
-                                                    <span class=>WebDav</span>
-                                                </button>
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Encrypted</span>
-                                                    <span class="text-warning">False</span>
-                                                </button>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Protocol <span class="text-success">S3</span></button>
                                             </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Encryption <span class="text-success">On</span></button>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <!--Shared folder 4-->
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-3 text-primary font-weight-bold mb-2">
-                                                Photos
+                                <td class="text-primary">
+                                    <a class="btn-block bg-transparent text-left text-primary font-weight-bold pt-2" data-toggle="collapse"
+                                    data-target="#tableRowDropdown4" aria-controls="tableRowDropdown4" aria-expanded="false">
+                                        Music
+                                    </a>
+                                    <div id="tableRowDropdown4" class="container-fluid collapse pt-3">
+                                        <div class="row m-auto">
+                                            
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Status <span class="text-danger">Offline</span></button>
                                             </div>
-                                            <div class="col-md-6">
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Status</span>
-                                                    <span class="text-success">Online</span>
-                                                </button>
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Protocol</span>
-                                                    <span class="text-success">S3</span>
-                                                </button>
-                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
-                                                    <span class="pr-2">Encrypted</span>
-                                                    <span class="text-success">True</span>
-                                                </button>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Protocol <span class="text-secondary">WebDav</span></button>
                                             </div>
+                                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 border m-auto text-center">
+                                                <button class="btn btn-block">Encryption <span class="text-warning">Off</span></button>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </td>
