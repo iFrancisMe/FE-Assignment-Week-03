@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartNAS - Navigator</title>
+
+    <!--Link Bootstrap CSS-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<!--Set background to gray-->
+<body class="bg-secondary">
+
+    <!--Start of Grid-->
+    <div class="container">
+        <div class="row">
+            <!--Leftside column-->
+            <div class="col-sm-1">
+            </div>
+            <!--Center column. 0 Padding. Rounded corners-->
+            <div class="col p-0 rounded">
+                <div class="jumbotron-fluid">  <!--Full width of column-->
+                    <header class="display-4 p-4 mb-0 font-weight-bold bg-dark text-white-50 rounded">
+                        Smart<span class="text-secondary">NAS</span> <span class="display-4">Navigator</span>
+                    </header>
+                </div>
+
+                <!--Navigation bar to expand on screens bigger than small-->
+                <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                    <a class="navbar-brand pl-3 pr-3 mb-2 text-white" href="#">Hostname</a>
+                    
+                    <!--Hamburger Button to show navbar items when collapsed-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--Navbar Items to expand and collapse-->
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto pl-3 pr-3 pt-1 pb-1 bg-dark rounded">
+                            <li class="navbar-item ml-2 mr-2">
+                                <a class="text-white p-1 mt-1 mt-2" href="index.html">Home</a>
+                            </li>
+                            <li class="navbar-item ml-2 mr-2">
+                                <a class="text-white p-1 mt-1 mt-2" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!--Main Content-->
+                <div class="bg-white p-3 text-dark">
+
+                    <!--Table of 1 column with embedded grid in table body data cell-->
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr scope="col">
+                                <th class="mr-auto">
+                                    Shared Folders
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <!--Start of embedded grid-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <!--Shared folder name in fixed column on left-->
+                                            <div class="col-3 text-primary font-weight-bold mb-2">
+                                                Documents
+                                            </div>
+                                            <!--Middle column takes up to 50% of screen space-->
+                                            <div class="col-md-6">
+                                                <!--Shared folder attributes in button stack-->
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Status</span>
+                                                    <span class="text-success">Online</span>
+                                                </button>
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Protocol</span>
+                                                    <span class="text-success">SMB</span>
+                                                </button>
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Encrypted</span>
+                                                    <span class="text-success">True</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!--Shared folder 2-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-3 text-primary font-weight-bold mb-2">
+                                                Movies
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Status</span>
+                                                    <span class="text-success">Online</span>
+                                                </button>
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Protocol</span>
+                                                    <span class="text-success">NFS</span>
+                                                </button>
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Encrypted</span>
+                                                    <span class="text-warning">False</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!--Shared folder 3-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-3 text-primary font-weight-bold mb-2">
+                                                Music
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Status</span>
+                                                    <span class="text-danger">Offline</span>
+                                                </button>
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Protocol</span>
+                                                    <span class=>WebDav</span>
+                                                </button>
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Encrypted</span>
+                                                    <span class="text-warning">False</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!--Shared folder 4-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-3 text-primary font-weight-bold mb-2">
+                                                Photos
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Status</span>
+                                                    <span class="text-success">Online</span>
+                                                </button>
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Protocol</span>
+                                                    <span class="text-success">S3</span>
+                                                </button>
+                                                <button class="btn btn-sm btn-block border border-secondary rounded pt-1 pb-1 pl-3 pr-3 ml-2 mr-2">
+                                                    <span class="pr-2">Encrypted</span>
+                                                    <span class="text-success">True</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--Rightside column-->
+            <div class="col-sm-1">
+
+            </div>
+            
+        </div>
+        <!--Footer grid-->
+        <div class="row pt-3">
+            <div class="col-sm-1"></div>
+            <!--Footer content in center column-->
+            <div class="col text-white-50">
+                <!--Left justified on small screens. Otherwise, centered.-->
+                <footer class="text-md-center text-sm-left">&copy; 2023 PseudoCompany Solutions</footer>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js" ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

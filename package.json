@@ -1,0 +1,15 @@
+{
+  "name": "fe-assignment-week-03",
+  "version": "1.0.0",
+  "description": "Coding Assignment for Week 3 - Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Francis Mendoza",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.7.1"
+  }
+}
